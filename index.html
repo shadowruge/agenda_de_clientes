@@ -7,16 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Monitoramento de carga Sedex interno</title>
+    <script src="/js/FileSaver.js"></script>
+    <script src="./js/main.js"></script>
+
+    <title>Agenda</title>
 </head>
-<style>
-    view {
-        background: rgb(157, 255, 0);
-    }
-</style>
 
 <body>
-    <div id="controle">
+    <div id="container">
+        <h1>Agenda de Clientes</h1>
         <form action="" id="my-form">
             <label for="">Nome</label><br>
             <input type="text" name="" id="nome"><br>
@@ -38,12 +37,10 @@
             <input type="text" name="" id="marca"><br>
             <label for="">Valor</label><br>
             <input type="text" name="" id="valor"><br>
-            <input type="submit" value="salvar" id="send"><br><br>
+           <button onclick="salvar()">Salvar</button><br><br>
         </form>
     </div>
     <div id="view"></div>
-    
-    <script src="./js/main.js"></script>
    
 </body>
 
