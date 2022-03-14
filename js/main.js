@@ -15,7 +15,7 @@ let blob = new Blob([
     `Nome: ${nome}\n`,
     `Sobre nome: ${sobre_nome}\n`,
     `Tel: ${tel}\n`,
-    `E-Mail${email}\n`,
+    `E-Mail: ${email}\n`,
     `Endereço: ${endereco}\n`,
     `Cep: ${cep}\n`,
     `Numero: ${numero}\n`,
