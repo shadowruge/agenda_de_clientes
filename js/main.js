@@ -11,7 +11,11 @@ function salvar() {
     let marca = document.getElementById("marca").value
     let valor = document.getElementById("valor").value
 
+    //
     
+   
+
+    //
     let blob = new Blob([`Nome: ${nome}\n`,
     `Sobre nome: ${sobre_nome}\n`,
     `Tel: ${tel}\n`,
@@ -28,18 +32,5 @@ function salvar() {
 
     saveAs(blob, `${nome}`);
 
-    const imporToDOM =`<span>
-    Nome: ${nome}<br>
-    Sobre nome: ${sobre_nome}<br>
-    Tel: ${tel}<br>
-    E-Mail: ${email}<br>
-    Endereço: ${endereco}<br>
-    Cep: ${cep}<br>
-    Numero: ${numero}<br>
-    Produto: ${produto}<br>
-    Marca: ${marca}<br>
-    Valor: ${valor}<br></span>`
-
-    view.innerHTML = imporToDOM
 }
 

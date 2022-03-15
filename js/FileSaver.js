@@ -77,11 +77,11 @@ var saveAs = _global.saveAs || (
     ? function saveAs () { /* noop */ }
 
   // Use download attribute first if possible (#193 Lumia mobile) unless this is a macOS WebView
-  : ('downloads' in HTMLAnchorElement.prototype && !isMacOSWebView)
+  : ('download' in HTMLAnchorElement.prototype && !isMacOSWebView)
   ? function saveAs (blob, name, opts) {
     var URL = _global.URL || _global.webkitURL
     var a = document.createElement('a')
-    name = name || blob.name || 'downloads'
+    name = name || blob.name || 'download'
 
     a.download = name
     a.rel = 'noopener' // tabnabbing
